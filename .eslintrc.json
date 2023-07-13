@@ -30,14 +30,24 @@
       "react-hooks/rules-of-hooks": "error",
       "react-hooks/exhaustive-deps": "warn",
       "react/react-in-jsx-scope": "off",
-      "prettier/prettier": "error",
+      "react/prop-types": "off",
+      "prettier/prettier": [
+        "error",
+        {
+          "endOfLine": "auto"
+        }
+      ],
       "import-helpers/order-imports": [
             "warn",
             {
                 "newlinesBetween": "always",
                 "groups":
                 [
-                  ["/^react", "/^next", "@next"],
+                  [
+                    "/^react/",
+                    "/^next/",
+                    "/@next/"
+                  ],
                   "/module/",
                   "/^@shared/",
                   "/components/",
