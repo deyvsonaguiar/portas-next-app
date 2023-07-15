@@ -1,11 +1,11 @@
 export default class Porta {
-  #numero;
-  #temPresente;
-  #selecionada;
-  #aberta;
+  #numero: number;
+  #temPresente: boolean;
+  #selecionada: boolean;
+  #aberta: boolean;
 
   constructor(
-    numero,
+    numero: number,
     temPresente = false,
     selecionada = false,
     aberta = false
