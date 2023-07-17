@@ -28,6 +28,9 @@ export default class Porta {
   get aberta() {
     return this.#aberta;
   }
+  get fechada() {
+    return !this.#aberta;
+  }
 
   desselecionar() {
     const selecionada = false;
