@@ -63,3 +63,10 @@
 .selecionada .macaneta {
   background-color: yellow;
 }
+
+.portas {
+  display: flex;
+  align-self: stretch;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
