@@ -3,7 +3,8 @@ import { useState } from 'react';
 import styles from '../styles/Jogo.module.css';
 
 import { criarPortas, atualizarPortas } from '../functions/portas';
-import Porta from '../model/porta';
+import Porta from '../components/Porta';
+
 
 export default function Jogo() {
   const [portas, setPortas] = useState(criarPortas(3, 1));
