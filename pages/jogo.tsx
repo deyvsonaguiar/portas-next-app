@@ -5,9 +5,11 @@ import styles from '../styles/Jogo.module.css';
 import { criarPortas, atualizarPortas } from '../functions/portas';
 import Porta from '../components/Porta';
 
+import Link from 'next/link'
+
 
 export default function Jogo() {
-  const [portas, setPortas] = useState(criarPortas(3, 1));
+  const [portas, setPortas] = useState(criarPortas(10, 1));
 
   function renderizarPortas() {
     return portas.map((porta) => {
@@ -26,7 +28,11 @@ export default function Jogo() {
   return (
     <div id={styles.jogo}>
       <div className={styles.portas}>{renderizarPortas()}</div>
-      <div className={styles.botoes}></div>
+        <Link href="/">
+          <div className={styles.botoes}>
+            <button>Reiniciar</button>
+          </div>
+        </Link>
     </div>
   );
 }
